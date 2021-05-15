@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		31449D5426503623003FA7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31449D5226503623003FA7D3 /* Main.storyboard */; };
 		31449D5626503625003FA7D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31449D5526503625003FA7D3 /* Assets.xcassets */; };
 		31449D5926503625003FA7D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31449D5726503625003FA7D3 /* LaunchScreen.storyboard */; };
+		3172A4B926503A4800212ADE /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172A4B826503A4800212ADE /* UITextField+Rx.swift */; };
+		CFF2FE525A2AE2A507377395 /* Pods_UITextField_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEBF5B34AE7365AFC2AFA7A /* Pods_UITextField_Rx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		31449D5526503625003FA7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31449D5826503625003FA7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31449D5A26503625003FA7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3172A4B826503A4800212ADE /* UITextField+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Rx.swift"; sourceTree = "<group>"; };
+		6077CCB1A8DE79E3B012A68E /* Pods-UITextField+Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextField+Rx.debug.xcconfig"; path = "Target Support Files/Pods-UITextField+Rx/Pods-UITextField+Rx.debug.xcconfig"; sourceTree = "<group>"; };
+		6FEBF5B34AE7365AFC2AFA7A /* Pods_UITextField_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITextField_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83110EB3F8248136A02B5E1B /* Pods-UITextField+Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITextField+Rx.release.xcconfig"; path = "Target Support Files/Pods-UITextField+Rx/Pods-UITextField+Rx.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF2FE525A2AE2A507377395 /* Pods_UITextField_Rx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				31449D4B26503623003FA7D3 /* UITextField+Rx */,
 				31449D4A26503623003FA7D3 /* Products */,
+				67A888F0EF736C5F3FBD40C5 /* Pods */,
+				FC538D3FCD51FF9C19DB56B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		31449D4B26503623003FA7D3 /* UITextField+Rx */ = {
 			isa = PBXGroup;
 			children = (
+				3172A4B7265039FA00212ADE /* Rx */,
 				31449D4C26503623003FA7D3 /* AppDelegate.swift */,
 				31449D4E26503623003FA7D3 /* SceneDelegate.swift */,
 				31449D5026503623003FA7D3 /* ViewController.swift */,
@@ -67,6 +77,31 @@
 			path = "UITextField+Rx";
 			sourceTree = "<group>";
 		};
+		3172A4B7265039FA00212ADE /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				3172A4B826503A4800212ADE /* UITextField+Rx.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		67A888F0EF736C5F3FBD40C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6077CCB1A8DE79E3B012A68E /* Pods-UITextField+Rx.debug.xcconfig */,
+				83110EB3F8248136A02B5E1B /* Pods-UITextField+Rx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC538D3FCD51FF9C19DB56B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FEBF5B34AE7365AFC2AFA7A /* Pods_UITextField_Rx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31449D5D26503625003FA7D3 /* Build configuration list for PBXNativeTarget "UITextField+Rx" */;
 			buildPhases = (
+				1E08C6B5739A33ABC7E815E5 /* [CP] Check Pods Manifest.lock */,
 				31449D4526503623003FA7D3 /* Sources */,
 				31449D4626503623003FA7D3 /* Frameworks */,
 				31449D4726503623003FA7D3 /* Resources */,
+				E2DA8521A9D246099A953A1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +169,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E08C6B5739A33ABC7E815E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITextField+Rx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2DA8521A9D246099A953A1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UITextField+Rx/Pods-UITextField+Rx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UITextField+Rx/Pods-UITextField+Rx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UITextField+Rx/Pods-UITextField+Rx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31449D4526503623003FA7D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +219,7 @@
 				31449D5126503623003FA7D3 /* ViewController.swift in Sources */,
 				31449D4D26503623003FA7D3 /* AppDelegate.swift in Sources */,
 				31449D4F26503623003FA7D3 /* SceneDelegate.swift in Sources */,
+				3172A4B926503A4800212ADE /* UITextField+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +363,7 @@
 		};
 		31449D5E26503625003FA7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6077CCB1A8DE79E3B012A68E /* Pods-UITextField+Rx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +382,7 @@
 		};
 		31449D5F26503625003FA7D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83110EB3F8248136A02B5E1B /* Pods-UITextField+Rx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
